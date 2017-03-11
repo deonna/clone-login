@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deonna.clonelogin.LoginActivity"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    android:background="#3B5999">
+
+
+    <TextView
+        android:id="@+id/tvEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:textColor="#BFFFFFFF"
+        android:layout_alignTop="@+id/ivFacebookLogo"
+        android:layout_toLeftOf="@+id/tvBullet"
+        android:layout_toStartOf="@+id/tvBullet"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="51dp"/>
+
+    <TextView
+        android:id="@+id/tvBullet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bullet"
+        android:layout_alignBaseline="@+id/tvEnglish"
+        android:layout_alignBottom="@+id/tvEnglish"
+        android:textColor="#BFFFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/tvBullet"
+        android:layout_alignBottom="@+id/tvBullet"
+        android:paddingLeft="4dp"
+        android:layout_toRightOf="@id/tvBullet"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email or Phone"
+        android:paddingBottom="18dp"
+        android:theme="@style/EditTextTheme"
+        android:textColorHint="#BFFFFFFF"
+        android:layout_below="@+id/tvBullet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="75dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:paddingBottom="18dp"
+        android:theme="@style/EditTextTheme"
+        android:textColorHint="#BFFFFFFF"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FFFFFF"
+        android:textColor="@android:color/white"
+        android:text="Log In"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Sign Up for Facebook"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/tvForgotPassword"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Forgot Password?"
+        android:layout_alignBottom="@+id/ivHelp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/ivFacebookLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fb_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"/>
+
+    <ImageView
+        android:id="@+id/ivHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_help"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"/>
+
+
+</RelativeLayout>
